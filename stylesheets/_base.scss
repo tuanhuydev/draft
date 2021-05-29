@@ -1,0 +1,14 @@
+@import "mixin";
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; // 1rem = 10px
+}
+
+*,
+*::before,
+*::after {
+    @include paddingNone;
+    @include marginNone;
+    box-sizing: inherit;
+}
